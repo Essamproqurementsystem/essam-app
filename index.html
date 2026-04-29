@@ -5267,10 +5267,11 @@ function closeMobileSidebar(){
 #hashtags-nav .ht-menu-btn:hover{background:var(--bg4);color:var(--text)}
 #hashtags-nav .ht-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .ht-picker{display:flex;flex-wrap:wrap;gap:6px;padding:8px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);min-height:42px;align-items:center}
-.ht-picker .hashtag-chip{cursor:pointer;user-select:none;transition:all 0.15s;opacity:0.45;filter:saturate(0.4)}
-.ht-picker .hashtag-chip:hover{opacity:0.8;filter:saturate(0.8)}
-.ht-picker .hashtag-chip.selected{opacity:1;filter:saturate(1.2) brightness(1.1);box-shadow:0 0 0 2px var(--text) inset, 0 2px 8px rgba(0,0,0,0.25);transform:translateY(-1px)}
-.ht-picker .hashtag-chip.selected::before{content:"✓";margin-right:3px;font-weight:700;font-size:9px;opacity:0.9}
+.ht-picker .hashtag-chip{cursor:pointer;user-select:none;transition:all 0.15s;color:var(--text)!important;opacity:0.9;filter:saturate(0.5)}
+.ht-picker .hashtag-chip .hash-sym{color:var(--text)!important;opacity:0.7}
+.ht-picker .hashtag-chip:hover{opacity:1;filter:saturate(0.85)}
+.ht-picker .hashtag-chip.selected{opacity:1;filter:saturate(1.2) brightness(1.1);box-shadow:0 0 0 2px var(--text) inset, 0 2px 8px rgba(0,0,0,0.25);transform:translateY(-1px);font-weight:600}
+.ht-picker .hashtag-chip.selected::before{content:"✓";margin-right:3px;font-weight:700;font-size:9px}
 .ht-picker-empty{font-size:11px;color:var(--text3);font-style:italic}
 .ht-color-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .ht-color-swatch{width:24px;height:24px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:all 0.15s}
